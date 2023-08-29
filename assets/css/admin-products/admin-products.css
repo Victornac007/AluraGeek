@@ -5,11 +5,12 @@
 
 .agregar-producto {
     padding: 16px;
-    background-color: var(--color_fondo-o-letra_botones-2);
+    background-color: rgb(222, 60, 57);
     color: #FFFFFF;
     border: none;
     margin-top: 0.3rem;
     cursor: pointer;
+    border-radius: .7rem;
 }
 
 .agregar-producto:hover {
@@ -303,10 +304,6 @@
     .product__container {
         padding: 20px 5px;
         width: 90%;
-    }
-
-    .product__card {
-        /*width: 50%;*/
     }
 
     .product__card--img {

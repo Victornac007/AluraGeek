@@ -87,6 +87,7 @@
     border: none;
     margin-top: 0.3rem;
     cursor: pointer;
+    border-radius: .3rem;
 }
 
 .info__dev {

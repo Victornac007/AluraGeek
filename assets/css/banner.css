@@ -25,7 +25,7 @@
 .banner__info_1{
     background: url(../img/banner.png) center / cover no-repeat;
     height: calc(100% - 100px);
-    width: 80%;
+    width: 100%;
     padding: 50px 50px 50px 80px;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
 .banner__info_2{
     background: url(../img/banner_2.jpeg) center / cover no-repeat;
     height: calc(100% - 100px);
-    width: 80%;
+    width: 100%;
     padding: 50px 50px 50px 80px;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
 .banner__info_3{
     background: url(../img/banner3.png) center / cover no-repeat;
     height: calc(100% - 100px);
-    width: 80%;
+    width: 100%;
     padding: 50px 50px 50px 80px;
     display: flex;
     flex-direction: column;
