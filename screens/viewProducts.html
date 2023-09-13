@@ -6,31 +6,33 @@
           rel = "stylesheet">
     <meta content = "width=device-width initial-scale=1.0" name = "viewport">
     <title>product__details</title>
-    <link href = "/assets/css/normalize.css" rel = "stylesheet"/>
-    <link href = "/assets/css/reset.css" rel = "stylesheet"/>
-    <link href = "/assets/css/variables.css" rel = "stylesheet"/>
-    <link href = "/assets/css/header.css" rel = "stylesheet">
-    <link href = "/assets/css/footer.css" rel = "stylesheet">
-    <link href = "/assets/css/admin-products/products.css" rel = "stylesheet">
-    <link href = "/assets/css/admin-products/product__details.css" rel = "stylesheet">
+    <link href = "../assets/css/normalize.css" rel = "stylesheet"/>
+    <link href = "../assets/css/reset.css" rel = "stylesheet"/>
+    <link href = "../assets/css/variables.css" rel = "stylesheet"/>
+    <link href = "../assets/css/header.css" rel = "stylesheet">
+    <link href = "../assets/css/footer.css" rel = "stylesheet">
+    <link href = "../assets/css/admin-products/products.css" rel = "stylesheet">
+    <link href = "../assets/css/admin-products/product__details.css" rel = "stylesheet">
+    
 </head>
 <body>
-<header class = "header__container">
-    <div class = "header__items">
-        <a class = "header__logoHome" href = "../index.html">
-            <img alt = "logo" class = "header__logoHome-image" src = "/assets/img/logo.svg">
-        </a>
-        <div class = "header__search">
-            <input class = "header__search-input"
-                   id = "search__items"
-                   placeholder = " Qué desea buscar ?"
-                   type = "text">
-            <button class = "header__search-button"><img alt = ""
-                                                         class = "header__search-icon"
-                                                         src = "/assets/img/header/search.svg"></button>
+    <header class = "header__container">
+        <div class = "header__items">
+            <a class = "header__logoHome" href = "../index.html">
+                <img alt = "logo" class = "header__logoHome-image" src = "../assets/img/logo.svg">
+            </a>
+            <div class = "header__search">
+                <input class = "header__search-input"
+                       id = "search__items"
+                       placeholder = " Qué desea buscar ?"
+                       type = "text">
+                <button class = "header__search-button"><img alt = ""
+                                                             class = "header__search-icon"
+                                                             src = "../assets/img/header/search.svg"></button>
+            </div>
         </div>
-    </div>
-</header>
+        <a class = "header__btn " href = "usuarios.html"> Users </a>
+    </header>
 <main>
 
     <section class = "detail-container">
@@ -49,7 +51,9 @@
 
     <section class = "products">
         <h2 class = "product__title">Productos Similares</h2>
-        <div class = "product__list" data-products></div>
+        <div class = "product__list" data-products>
+
+        </div>
     </section>
 
 </main>
@@ -57,7 +61,7 @@
     <section class = "contacto__container">
         <div class = "contacto__logo">
             <a href = "../index.html">
-                <img alt = "logo" class = "contacto__logoFooter" src = "/assets/img/logo.svg">
+                <img alt = "logo" class = "contacto__logoFooter" src = "../assets/img/logo.svg">
             </a>
         </div>
         <div class = "contacto__info">
@@ -73,34 +77,28 @@
                 <li class = "contacto__info-li"><a class = "contacto__info-text" href = "#">Anúncie aquí</a></li>
             </ul>
         </div>
-        <form class = "contacto__contactar">
+        <form class = "contacto__contactar" id = "form__data">
             <h2 class = "contacto__contactar-title">Hable con nosotros</h2>
 
             <label class = "contacto__contactar-nombre contacto__textBox">
                 Nombre
-                <input class = "contacto__contactar-nombreInput"
-                       name = "nombre"
-                       placeholder = "Pedro Santana"
-                       required
-                       type = "text">
+                <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = " Su nombre"
+                       required type = "text">
             </label>
 
             <label class = "contacto__mensaje contacto__textBox">
                 Escribe tu mensaje
-                <textarea class = "contacto__mensaje-text"></textarea>
+                <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required placeholder=" Mensaje" ></textarea>
             </label>
 
-            <a href = "#" rel = "">
-                <button class = "contacto__button">Enviar mensaje</button>
-            </a>
-
+            <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
         </form>
-    </section>
+    </section>  
     <div class="info__dev">
         <p>Desarrollado por <a href="https://api.whatsapp.com/send?phone=56942501330&text=">VicToCode</a></p>
         <p>2023</p>
-        <a href="https://github.com/Victornac007"><img src="/assets/img/github.svg " alt="git"></a>
-        <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="/assets/img/linkedin.svg" alt="linkedin"></a>
+        <a href="https://github.com/Victornac007"><img src="../assets/img/github.svg " alt="git"></a>
+        <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="../assets/img/linkedin.svg" alt="linkedin"></a>
     </div>
 </footer>
 

@@ -9,19 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cesarG-24/e-comerce.git"
+    "url": "git+https://github.com/Victornac007/AluraGeek"
   },
   "keywords": [
     "js",
     "html",
     "css"
   ],
-  "author": "César Guerrero",
+  "author": "Victor Herrera",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cesarG-24/e-comerce_Alura/issues"
-  },
-  "homepage": "https://github.com/cesarG-24/e-comerce_Alura#readme",
+  "homepage": "https://github.com/Victornac007/AluraGeek",
   "devDependencies": {
     "json-server": "^0.17.0",
     "serve": "^14.0.1"

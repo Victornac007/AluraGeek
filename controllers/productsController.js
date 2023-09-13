@@ -66,8 +66,8 @@ const render = async () => {
                 productos3.appendChild(nuevoProducto(elemento.name, elemento.price, elemento.imageUrl, elemento.id));
             });
         }
-    } catch (err) {
-        console.error("Ocurrió un error", err);
+    } catch (error) {
+        console.log("Ocurrió un error", error);
     }
 };
 

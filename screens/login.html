@@ -38,14 +38,14 @@
 
             <div> 
                 <p>Email</p>
-                <input autocomplete class="login__email" data-email id="login__email"
-                       placeholder="Ecriba su correo electronico" type="email">
+                <input autocomplete="email" class="login__email" data-email id="login__email"
+                       placeholder="Ecriba su correo electronico" type="email" required>
                 <p class = "login__message-error">requerido</p>
             </div>
             <div>
                 <p>Contraseña</p>
                 <input class="login__password" data-password
-                       id="login__password" placeholder="Escriba su contraseña" type="password">
+                       id="login__password" placeholder="Escriba su contraseña" type="password" autocomplete="current-password" required>
                 <p class = "login__message-error">requerido</p>
             </div>
 
@@ -61,7 +61,7 @@
 <footer>
     <section class = "contacto__container">
         <div class = "contacto__logo">
-            <a href = "#">
+            <a href = "../index.html">
                 <img alt = "logo" class = "contacto__logoFooter" src = "../assets/img/logo.svg">
             </a>
         </div>
@@ -83,23 +83,23 @@
 
             <label class = "contacto__contactar-nombre contacto__textBox">
                 Nombre
-                <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = "Pedro Santana"
+                <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = " Su nombre"
                        required type = "text">
             </label>
 
             <label class = "contacto__mensaje contacto__textBox">
                 Escribe tu mensaje
-                <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required></textarea>
+                <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required placeholder=" Mensaje" ></textarea>
             </label>
 
             <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
         </form>
-    </section>
+    </section>  
     <div class="info__dev">
         <p>Desarrollado por <a href="https://api.whatsapp.com/send?phone=56942501330&text=">VicToCode</a></p>
         <p>2023</p>
-        <a href="https://github.com/Victornac007"><img src="/assets/img/github.svg " alt="git"></a>
-        <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="/assets/img/linkedin.svg" alt="linkedin"></a>
+        <a href="https://github.com/Victornac007"><img src="../assets/img/github.svg " alt="git"></a>
+        <a href="https://www.linkedin.com/in/victor-ali-herrera-alvarado-b10290275/"><img src="../assets/img/linkedin.svg" alt="linkedin"></a>
     </div>
 </footer>
 <script src = "//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

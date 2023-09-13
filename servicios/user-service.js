@@ -1,8 +1,8 @@
 const listaUsuarios = () =>
-    fetch('https://ds-json.herokuapp.com/users').then(respuesta => respuesta.json());
+    fetch('http://localhost:3000/users').then(respuesta => respuesta.json());
 
 const crearUsuario = (name, email, password) => {
-    return fetch('https://ds-json.herokuapp.com/users', {
+    return fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,17 +23,17 @@ const crearUsuario = (name, email, password) => {
 };
 
 const detalleUsuario = (id) => {
-    return fetch(`https://ds-json.herokuapp.com/users/${id}`).then((resp) => resp.json());
+    return fetch(`http://localhost:3000/users/${id}`).then((resp) => resp.json());
 };
 
 const deleteUser = (id) => {
-    return fetch(`https://ds-json.herokuapp.com/users/${id}`, {
+    return fetch(`http://localhost:3000/users/${id}`, {
         method: 'DELETE',
     });
 };
 
 const updateUsuario = (name, email, password, id) => {
-    return fetch(`https://ds-json.herokuapp.com/users/${id}`, {
+    return fetch(`http://localhost:3000/users/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
